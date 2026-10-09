@@ -1,0 +1,48 @@
+[
+  {
+
+    "brand": "A.K.O.O Clothing",
+    "price": "200",
+    "img": "top1.jpg"
+  },
+  {
+    "brand": "B.K.T Clothing",
+    "price": "500",
+    "img": "top2.jpg"
+  },
+  {
+    "brand": "C.K.T Clothing" ,
+    "price": "650",
+    "img": "top3.jpg"
+  },
+  {
+    "brand": "D.K.T Clothing",
+    "price": "400",
+    "img": "top4.jpg"
+  },
+  {
+    "brand": "F.K.T Clothing",
+    "price": "300",
+    "img": "top5.jpg"
+  },
+  {
+    "brand": "E.K.T Clothing",
+    "price": "450",
+    "img": "top6.jpg"
+  },
+  {
+    "brand": "H.K.T Clothing",
+    "price": "600",
+    "img": "top7.jpg"
+  },
+  {
+    "brand": "Blue Lace-Hem",
+    "price": "700",
+    "img": "top8.jpg"
+  },
+  {
+    "brand": "Embroidered Sleeve",
+    "price": "500",
+    "img": "top9.jpg"
+  }
+]

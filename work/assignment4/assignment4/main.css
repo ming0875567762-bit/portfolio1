@@ -1,0 +1,559 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+    /* สีครีมอ่อน */
+    background-color: #fff4d6;
+    color: #3d2418;
+}
+
+/* =========================
+        GRID CONTAINER
+   ========================= */
+
+.grid-container {
+    width: 92%;
+    max-width: 1400px;
+    margin: 30px auto;
+    display: grid;
+    
+    grid-template-areas:
+        "header header header"
+        "main1 main2 right"
+        "footer footer footer";
+    gap: 20px;
+}
+.grid-container {
+    grid-template-columns: 1fr 2fr 1.4fr;
+}
+
+.instructions-grid {
+  grid-template-columns: repeat(2, 1fr); /* แบ่ง 2 คอลัมน์สำหรับ Desktop */
+}
+
+/* กรอบหลักของแต่ละกล่อง */
+.grid-container div {
+    border: 4px solid #d62828;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(100, 30, 20, 0.20);
+}
+
+
+/*============= HEADER============= */
+
+#header {
+    grid-area: header;
+    background: linear-gradient(135deg, #b71c1c,#e6392f,#c62828);
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+
+    border: 5px solid #ffc928;
+}
+#header h1 {
+    margin: 0;
+    font-size: 80px;
+    text-transform: uppercase;
+    color: #ffd43b;
+    text-shadow:2px 2px 0 #8b0000,4px 4px 5px rgba(0, 0, 0, 0.25);
+}
+
+#header p {
+    margin: 10px;
+    font-size: 16px;
+    color: #fff8dc;
+}
+
+
+/* =========================
+          INGREDIENTS
+   ========================= */
+
+.main1 {
+    grid-area: main1;
+    background-color: #fffaf0;
+    padding: 22px;
+}
+.main1 h2 {
+	font-size: 30px;
+	margin-top: 0;
+    color: white;
+    background-color: #d62828;
+    padding: 12px 15px;
+	overflow-wrap: break-word;
+	word-break: break-word;
+    border-left: 8px solid #ffc928;
+    border-radius: 8px;
+    text-transform: uppercase;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+.main1 img {
+    width: 100%;
+	max-width: 250px;
+	height: auto;
+    border-radius: 5%;
+    object-fit: cover;
+    display: block;
+    margin: 15px auto;
+    border: 4px solid #d62828;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.main1 img:hover {
+    transform: translatey(0.2s);
+}
+.main1 h3 {
+	font-size: 30px;
+	margin-top: 0;
+    color: white;
+    background-color: #d62828;
+    padding: 12px 15px;
+	overflow-wrap: break-word; 
+    word-break: break-word;    
+    border-left: 8px solid #ffc928;
+    border-radius: 8px;
+    text-transform: uppercase;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+.main1 ul {
+		font-size: 18px;
+		padding-left: 28px;
+		margin-bottom: 10px;
+}
+.main1 ul li  marker {
+    color: #d62828;
+}
+
+/* =====INSTRUCTIONS=== */
+.steppic{
+	width: 350px;
+	max-width: 350px;
+	height: auto;
+    border-radius: 5%;
+    object-fit: cover;
+    display: block;
+    margin: 15px auto;
+    border: 4px solid #ffc928;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.steppic:hover {
+	transform: translateY(10px);
+} 
+#main2 {
+    grid-area: main2;
+    background-color: #fffdf5;
+    padding: 20px;
+}
+#main2 h2 {
+	font-size: 30px;
+   	margin-top: 0;
+    color: white;
+    background-color: #d62828;
+    padding: 12px 15px;
+    border-left: 8px solid #ffc928;
+    border-radius: 8px;
+    text-transform: uppercase;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+.step1 h3 {
+	font-size: 30px;
+	padding: 10px;
+	color: #a4161a;
+    background-color: #ffe066;
+    padding: 9px 12px;
+    border-radius: 7px;
+    border-left: 5px solid #d62828;
+}
+.step1 {
+    background-color: #fff7db;
+    margin-bottom: 25px;
+    padding: 15px;
+    border: 3px solid #ffc928;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(110, 50, 20, 0.13);
+}
+.step1 p {
+	font-size: 23px;
+    margin: 10px 5px 5px;
+    line-height: 1.6;
+}
+
+.step2 {
+    background-color: #fff7db;
+    margin-bottom: 25px;
+    padding: 15px;
+    border: 3px solid #ffc928;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(110, 50, 20, 0.13);
+	
+}
+.step2 h3 {
+	font-size: 30px;
+	padding: 10px;
+	margin: 20px;
+	color: #a4161a;
+    background-color: #ffe066;
+    padding: 9px 12px;
+    border-radius: 7px;
+    border-left: 5px solid #d62828;
+	
+}
+
+.step2 p {
+	font-size: 23px;
+    margin: 10px 5px 5px;
+    line-height: 1.6;
+}
+
+.step3 {
+    background-color: #fff7db;
+    margin-bottom: 25px;
+    padding: 15px;
+    border: 3px solid #ffc928;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(110, 50, 20, 0.13);
+}
+.step3 h3 {
+	font-size: 30px;
+	padding: 10px;
+	margin: 20px;
+	color: #a4161a;
+    background-color: #ffe066;
+    padding: 9px 12px;
+    border-radius: 7px;
+    border-left: 5px solid #d62828;
+}
+
+.step3 p {
+	font-size: 23px;
+    margin: 10px 5px 5px;
+    line-height: 1.6;
+}
+
+.step4 {
+    background-color: #fff7db;
+    margin-bottom: 25px;
+    padding: 15px;
+    border: 3px solid #ffc928;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(110, 50, 20, 0.13);
+}
+.step4 h3 {
+	font-size: 30px;
+	padding: 10px;
+	margin: 20px;
+	color: #a4161a;
+    background-color: #ffe066;
+    padding: 9px 12px;
+    border-radius: 7px;
+    border-left: 5px solid #d62828;
+}
+
+.step4 p {
+	font-size: 23px;
+    margin: 10px 5px 5px;
+    line-height: 1.6;
+}
+
+.step5 {
+    background-color: #fff7db;
+    margin-bottom: 25px;
+    padding: 15px;
+    border: 3px solid #ffc928;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(110, 50, 20, 0.13);
+}
+.step5 h3 {
+	font-size: 30px;
+	padding: 10px;
+	margin: 20px;
+	color: #a4161a;
+    background-color: #ffe066;
+    padding: 9px 12px;
+    border-radius: 7px;
+    border-left: 5px solid #d62828;
+}
+
+.step5 p {
+	font-size: 23px;
+    margin: 10px 5px 5px;
+    line-height: 1.6;
+}
+
+
+.step6 {
+    background-color: #fff7db;
+    margin-bottom: 25px;
+    padding: 15px;
+    border: 3px solid #ffc928;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(110, 50, 20, 0.13);
+}
+.step6 h3 {
+	font-size: 30px;
+	padding: 10px;
+	margin: 20px;
+	color: #a4161a;
+    background-color: #ffe066;
+    padding: 9px 12px;
+    border-radius: 7px;
+    border-left: 5px solid #d62828;
+}
+.step6 p {
+	font-size: 23px;
+    margin: 10px 5px 5px;
+    line-height: 1.6;
+}
+.step7 {
+    background-color: #fff7db;
+    margin-bottom: 25px;
+    padding: 15px;
+    border: 3px solid #ffc928;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(110, 50, 20, 0.13);
+}
+.step7 h3 {
+	font-size: 30px;
+	padding: 10px;
+	margin: 20px;
+	color: #a4161a;
+    background-color: #ffe066;
+    padding: 9px 12px;
+    border-radius: 7px;
+    border-left: 5px solid #d62828;;
+}
+
+.step7 p {
+	font-size: 23px;
+    margin: 10px 5px 5px;
+    line-height: 1.6;
+}
+
+
+/* =========================
+            RIGHT
+   ========================= */
+
+#right {
+    grid-area: right;
+    background-color: #ffec99;
+    padding: 22px;
+    border-color: #e6392f;
+   
+}
+#right h2 {
+	font-size: 30px;
+	margin-top: 0;
+    color: white;
+    background-color: #d62828;
+    padding: 12px 15px;
+    border-left: 8px solid #ffc928;
+    border-radius: 8px;
+    text-transform: uppercase;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+#right img {
+    width: 100%;
+	max-width: 350px;
+	height: auto;
+    border-radius: 5%;
+    object-fit: cover;
+    display: block;
+    margin: 15px auto;
+    border: 4px solid #d62828;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+#right img:hover {
+    transform: translateY(-10px) scale(1.03);
+    border-color: #d62828;
+}
+
+/* =========================
+            FOOTER
+   ========================= */
+
+#footer {
+    grid-area: footer;
+    background-color: #b71c1c;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    border: 4px solid #ffc928;
+}
+
+
+#footer p {
+    margin: 0;
+}
+
+#footer a {
+    color: #ffd43b;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+#footer a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+
+/* =========================
+            HEADINGS
+   ========================= */
+
+/*h2 {
+    margin-top: 0;
+    color: white;
+    background-color: #d62828;
+    padding: 12px 15px;
+    border-left: 8px solid #ffc928;
+    border-radius: 8px;
+    text-transform: uppercase;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+/*h3 {
+    color: #a4161a;
+    background-color: #ffe066;
+    padding: 9px 12px;
+    border-radius: 7px;
+    border-left: 5px solid #d62828;
+    font-size: 16px;
+}
+
+
+
+
+/* รูป Pizza สำเร็จ */
+#right img {
+    border: 5px solid #d62828;
+}
+
+
+/* =========================
+        EACH RECIPE STEP
+   ========================= */
+
+/*.step {
+    background-color: #fff7db;
+    margin-bottom: 25px;
+    padding: 15px;
+    border: 3px solid #ffc928;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(110, 50, 20, 0.13);
+}
+
+
+.step:hover {
+    border-color: #d62828;
+
+    transform: translateY(-2px);
+
+    transition: 0.2s;
+}
+
+
+.step p {
+    margin: 10px 5px 5px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================
+         RECIPE INFO
+   ========================= */
+
+#right p {
+    background-color: #fff8dc;
+    padding: 12px;
+    border-radius: 8px;
+    border-left: 5px solid #d62828;
+    margin: 12px 0;
+}
+
+
+/* ==========TABLET========= */
+
+@media only screen and (max-width: 768px) {
+    .grid-container {
+        width: 94%;
+        grid-template-columns: 40% 55%;
+        grid-template-areas:
+            "header header"
+            "main1 right"
+            "main2 main2"
+            "footer footer";
+			#right h2
+			.main1 h2, 
+    .main1 h3, 
+    #right h2, 
+    h2 {
+        font-size: 22px; 
+        padding: 10px; /* ลด Padding ลงนิดหน่อยไม่ให้กินพื้นที่ */
+    }
+}
+    }
+
+	.main1 img,
+    #right img,
+    .steppic {
+        max-width: 100%;
+        height: auto;
+    }
+
+    #header {
+        grid-area: header;
+    }
+    #header h1 {
+        font-size: 38px;
+    }
+    #footer {
+        grid-area: footer;
+    }
+/* =======MOBILE========*/
+
+@media only screen and (max-width: 480px) {
+    .grid-container {
+        width: 94%;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "main1"
+            "main2"
+            "right"
+            "footer";
+        gap: 15px;
+    }
+    #header {
+        grid-area: header;
+        padding: 25px 15px;
+    }
+
+    #header h1 {
+        font-size: 30px;
+    }
+    #header p {
+        font-size: 15px;
+    }
+    #footer {
+        grid-area: footer;
+    }
+
+
+    .grid-container > div {
+        border-width: 3px;
+        border-radius: 14px;
+    }
+    #main1,
+    #main2,
+    #right {
+        padding: 15px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+}
