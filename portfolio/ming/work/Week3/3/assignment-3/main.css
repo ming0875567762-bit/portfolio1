@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff5f7;
+    color: #5a3e36;
+}
+/* Header */
+.header {
+    background-color: #f8c8dc;
+    padding: 30px;
+    border-bottom: 3px solid #d99ab0;
+    text-align: center;
+    position: relative;
+}
+.header h1 {
+    margin: 10px;
+}
+.header p {
+    margin: 5px;
+}
+
+/* กล่อง Recipe */
+.Mainrecipe {
+    width: 250;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: white;
+    border: 2px solid #e5b5c5;
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* รูปภาพหลัก*/
+.recipeimgg img {
+    width: 500px;
+    border: 3px solid #d99ab0;
+    border-radius: 15px;
+}
+.recipeinformation ul {
+    font-size: 25px;
+    text-align: left;
+}
+
+/*Ingredientsวัตถุดิบ */
+.Ingredients {
+    width: 80%;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: white;
+    border: 2px solid #e5b5c5;
+    border-radius: 15px;
+    text-align: center;
+}
+.Ingredients h2 {
+    text-align: center;
+}
+.ingredientslayout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+/* รูป Ingredients */
+.ingredientimage img {
+    width: 300px;
+    border: 2px solid #d99ab0;
+    border-radius: 10px;
+}
+.ingredientlist li {
+    text-align: center;
+    
+}
+
+/*Step by Step*/
+.steplayout {
+ text-align: center;
+}
+.stepcontainer {  
+ padding: 10px;
+ display: flex;
+ text-align: center;
+ justify-content: center;
+ gap: 20px;
+}
+
+/* กล่องข้อความแต่ละกรอบ Step */
+.steppicture {
+    width: 550px;
+    height: 450px;
+    padding: 15px;
+    border: 2px solid #e5b5c5;
+    border-radius: 12px;
+    background-color: #fff0f4;
+   
+}
+.steppicture p {
+    font-size: large;
+}
+/* รูปใน Step */
+.steppicture img {
+    width: 220px;
+    border-radius: 10px;
+    
+}
+
+/* Baking  */
+.baking {
+    width: 80%;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: #ffe4ec;
+    border: 2px solid #e5b5c5;
+    border-radius: 15px;
+    text-align: center;
+}
+/* จัดรูปกับข้อความให้อยู่ข้างกัน */
+.bakingcontent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    text-align: left;
+}
+/* รูป Baking */
+.bakingcontent img {
+    width: 350px;
+    border: 2px solid #d99ab0;
+    border-radius: 12px;
+}
+
+
+
+/* link */
+.link {
+    width: 80%;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: white;
+    border: 2px solid #e5b5c5;
+    border-radius: 15px;
+    text-align: center;
+}
+.link a {
+    color: #c45b82;
+    text-decoration: none;
+}
+
+/* Active */
+.link:active {
+    transform: scale(0.99);
+}
